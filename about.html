@@ -98,6 +98,16 @@
     75% { transform: translate(3px, 3px); }
     100% { transform: translate(0); }
 }
+  /* LEVITATING GHOST EFFECT */
+.container {
+    animation: float-ghost 6s ease-in-out infinite;
+}
+
+@keyframes float-ghost {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); } /* Moves up */
+    100% { transform: translateY(0px); } /* Moves down */
+}
     </style>
 </head>
 <body>
