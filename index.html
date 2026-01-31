@@ -169,6 +169,21 @@
     75% { text-shadow: -3px 0 red, 3px 0 blue; }
     100% { text-shadow: 3px 0 red, -3px 0 blue; }
 }
+   /* FORCE GLITCH MODE */
+.btn:hover {
+    animation: glitch-shake 0.3s infinite !important;
+    background-color: black !important;
+    text-shadow: 2px 2px #ff0000, -2px -2px #00ccff !important;
+    border: 2px solid white !important;
+}
+
+@keyframes glitch-shake {
+    0% { transform: translate(0); }
+    25% { transform: translate(-3px, 3px); }
+    50% { transform: translate(-3px, -3px); }
+    75% { transform: translate(3px, 3px); }
+    100% { transform: translate(0); }
+}
     </style>
 </head>
 <body>
