@@ -72,8 +72,18 @@
 }
 
 .btn:hover {
+    /* SUPER GLITCH HOVER */
+.btn:hover {
     transform: translateY(-3px) scale(1.05);
     box-shadow: 0 0 25px rgba(0, 114, 255, 0.8);
+    animation: glitch-color 0.2s infinite;
+}
+
+@keyframes glitch-color {
+    0% { text-shadow: 4px 4px red; }
+    50% { text-shadow: -4px -4px blue; }
+    100% { text-shadow: 4px 4px red; }
+}
 }
 
 /* YOUTUBE STYLE (Red/Orange) */
