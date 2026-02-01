@@ -131,6 +131,20 @@
   from { max-width: 0 }
   to { max-width: 100% }
 }
+   /* VIP BUTTON STYLE (Gold) */
+.btn-vip {
+    background: linear-gradient(45deg, #ffd700, #b8860b);
+    color: black;
+    font-weight: bold;
+    border: 2px solid #fff;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+}
+
+.btn-vip:hover {
+    box-shadow: 0 0 30px rgba(255, 215, 0, 1);
+    transform: scale(1.1);
+    /* The glitch effect will automatically apply here too! */
+}     
 
 /* The Blinking Cursor */
 @keyframes blink-caret {
@@ -170,7 +184,11 @@
   <a href="index.html">🏠 Home</a>
   <a href="projects.html">🎮 Projects</a>
   <a href="about.html">👤 About Me</a>
-</div>
+<br><br>
+<a href="premium.html">
+    <button class="btn btn-vip">👑 VIP Access</button>
+</a>
+    </div>
 
 
     <div class="container">
